@@ -7,8 +7,10 @@ public class GradingSystem {
     if(percentage >=60){
       return true;
     }
+    else{
+      return false;
+    }
     // Otherwise return false.
-    return false;
   }
 
   public char getGrade(int percentage) {
@@ -29,10 +31,9 @@ public class GradingSystem {
       return 'D';
     }
     // If it's less than 60, return 'F'.
-    else if (percentage<60){
+    else{
       return 'F';
     }
-    return 'X';
 
   }
 
@@ -49,10 +50,9 @@ public class GradingSystem {
     }
     // If percentage is 60 or higher, return a String that says "A retake is not
     // required."
-    else if(percentage>=60){
+    else{
       return "A retake is not required";
     }
-    return "";
   }
 
 }
